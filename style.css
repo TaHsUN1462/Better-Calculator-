@@ -1,0 +1,167 @@
+@font-face {
+  font-family: 'My';
+  src: url('Myfont-Regular.ttf');
+}
+.home{
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  left: 0px;
+  top: 0;
+  padding: 0px;
+  font-size: 20px;
+  margin-bottom: 10px;
+  background: #DC2626;
+  color: white;
+  border-radius: 10px;
+  transition: 0.2s;
+  border: solid 1px black;
+  margin-top: 5px;
+  margin-left: 5px;
+}
+.home:hover{
+  border-radius: 12px;
+}
+.home:active{
+  border-radius: 15px;
+}
+:root{
+  --color: #d7c1c0;
+  --outline: #00E8B8;
+  --shadow: white;
+  --fill: black;
+  --bg: #0f0f0f;
+  --input: #3b2626;
+  --main: #1c1011;
+  --button: #271819;
+  --eq: #733333;
+  --ac: #5a4319;
+  --op: #5d3f3e;
+  --hoverac: #7d6a49;
+  --hovereq: #905e5e;
+  --hoverop: #7f6766;
+  --buttonhover: #544849;
+  --btn: white;
+}
+.light{
+  --color: #524342;
+  --outline: #000000;
+  --shadow: black;
+  --fill: white;
+  --bg: #f0f0f0;
+  --input: #efe0df;
+  --main: #fff8f7;
+  --button: #f9efee;
+  --eq: #ffdad8;
+  --ac: #ffdeac;
+  --op: #ffdad8;
+  --hoverac: #caaf88;
+  --hovereq: #c9acab;
+  --hoverop: #c9acab;
+  --buttonhover: #c5bdbc;
+  --btn: black;
+}
+input{
+  font-family: 'My', Times New Roman;
+  width: 80%;
+  font-size: 30px;
+  height: 30px;
+  padding: 20px;
+  position: relative;
+  left: 6px;
+  background: var(--input);
+  border: none;
+  border-radius: 4px;
+  margin-bottom: 40px;
+  text-align: right;
+  color: var(--color);
+}
+body{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  flex-direction: column;
+  background: var(--bg);
+}
+.main{
+  background: var(--main);
+  padding: 20px;
+  border-radius: 20px;
+  border: none;
+  box-shadow: 0 20px 100px rgba(0,0,0,0.5);
+  outline: 2px solid var(--outline);
+}
+button{
+  width: 60px;
+  height: 60px;
+  border: none;
+  background: var(--button);
+  border-radius: 90px;
+  box-shadow: 0 20px 10px rgba(0,0,0,0.2);
+  margin: 2px;
+  margin-bottom: 4px;
+  font-family: Segoe UI;
+  font-size: 20px;
+  cursor: pointer;
+  color: var(--color);
+  transition: 0.2s;
+  font-weight: bold;
+}
+input:placeholder {
+  color: black;
+}
+.eq{
+  background: var(--eq);
+}
+.op{
+  background: var(--op);
+}
+.ac{
+  background: var(--ac);
+}
+button:hover{
+  border-radius: 17px;
+  transition: 0.2s;
+  background: var(--buttonhover);
+}
+.eq:hover{
+  background: var(--hovereq);
+}
+.op:hover{
+  background: var(--hoverop);
+}
+.ac:hover{
+  background: var(--hoverac);
+}
+.theme-switcher{
+  background: var(--btn);
+  position: absolute;
+  top: 50px;
+  left: 0;
+  margin: 15px;
+  box-shadow: 0 0 100px var(--shadow), 0 0 100px var(--shadow);
+}
+button svg:last-child{
+  display: none;
+}
+.light button svg:last-child{
+  display: block;
+  position: relative;
+  left:12px;
+}
+.light button svg:first-child{
+  display: none;
+}
+svg{
+  fill: var(--fill);
+}
+.theme-switcher:hover{
+  background: gray;
+}
+input{
+  outline: 2px solid var(--outline)
+}
+button:hover{
+  outline: 2px solid var(--outline)
+}
